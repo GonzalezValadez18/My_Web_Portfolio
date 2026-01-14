@@ -3,7 +3,10 @@
 @import url('../variables.css');
 
 /* Componentes */
-@import url('../components/PhotoMarc.css');
+@import url('../components/photo-marc.css');
+@import url('../components/progress-bar.css');
+@import url('../components/button-keyboard.css');
+@import url('../components/button-visible-icon.css');
 /* Propios */
 
 
@@ -93,6 +96,66 @@
             }
         }
 
+    }
+}
+
+.xp-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 50px 0;
+    border: 1px solid var(--purple);
+    background-color: rgba(128, 0, 255, 0.1);
+}
+
+.button-section {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .pulse-text {
+        width: 1200px;
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 500;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    /* Animación del guion bajo */
+    .underscore {
+        animation: underscorePulse 1.2s ease-in-out infinite;
+    }
+}
+
+
+
+
+@keyframes underscorePulse {
+    0% {
+        color: #ffffff;
+        opacity: 1;
+    }
+
+    50% {
+        color: #dcdcdc;
+        opacity: 0.6;
+    }
+
+    100% {
+        color: #ffffff;
+        opacity: 1;
     }
 }
 
