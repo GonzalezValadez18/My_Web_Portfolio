@@ -1,6 +1,6 @@
-function ButtonVisibleIcon({iconButton, buttonText, iconAlt}) {
+function ButtonVisibleIcon({iconButton, buttonText, iconAlt, href}) {
   return (
-    <a href="" className="button-visible-icon">
+    <a href={href} className="button-visible-icon">
       <img src={iconButton} className="button-icon" alt={iconAlt} />
       <span className="button-visible-text">{buttonText}</span>
     </a>

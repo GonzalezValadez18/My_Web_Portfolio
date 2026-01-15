@@ -62,7 +62,7 @@ function App() {
       </section>
 
       <section className="button-section">
-        <p class="pulse-text">
+        <p className="pulse-text">
           &gt; Press Start<span class="underscore">_</span>
         </p>
         <ButtonKeyboard buttonText="CONTINUAR LA AVENTURA" />
@@ -70,16 +70,19 @@ function App() {
           iconButton={iconThunder}
           buttonText="ARBOL DE HABILIDADES"
           iconAlt="Icono de arbol de habilidades"
+          href=""
         />
         <ButtonVisibleIcon
           iconButton={iconInvetary}
           buttonText="PROYECTOS"
           iconAlt="Icono de proyectos"
+          href=""
         />
         <ButtonVisibleIcon
           iconButton={iconMail}
           buttonText="CONTACTAME"
           iconAlt="Icono de contacto"
+          href=""
         />
       </section>
       <Footer />
