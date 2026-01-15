@@ -17,15 +17,18 @@
     &:hover {
         opacity: 1;
         transition: all 0.3s ease-in-out;
+
         .button-icon {
             visibility: visible;
+            transition: all 0.3s ease-in-out;
         }
     }
 
     .button-icon {
         width: 30px;
         position: absolute;
-        left:20px;
+        left: 20px;
         visibility: hidden;
+        transition: all 0.3s ease-in-out;
     }
 }

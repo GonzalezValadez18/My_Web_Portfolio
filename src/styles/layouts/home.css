@@ -3,6 +3,7 @@
 @import url('../variables.css');
 
 /* Componentes */
+@import url('../components/footer.css');
 @import url('../components/photo-marc.css');
 @import url('../components/progress-bar.css');
 @import url('../components/button-keyboard.css');
@@ -19,6 +20,7 @@
     position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
 
     nav {
         display: flex;

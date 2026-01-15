@@ -1,0 +1,51 @@
+.footer {
+    margin-top: 80px;
+}
+
+.footer__redes-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 45px auto;
+    list-style: none;
+
+    li .footer__link {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+
+        img {
+            width: 40px;
+            margin-right: 8px;
+            vertical-align: middle;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 0.7;
+                transition: opacity 0.3s ease-in-out;
+            }
+        }
+
+        ;
+    }
+}
+
+
+
+
+
+.separador {
+    background-color: #e0e0e0;
+    height: 2px;
+    max-width: 30px;
+    margin: 15px auto 20px;
+}
+
+.footer__texto {
+    color: #9e9e9e;
+    text-align: center;
+    font-size: 14px;
+}

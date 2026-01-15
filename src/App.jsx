@@ -1,13 +1,15 @@
 import { useState } from "react";
+import Footer from "./components/Footer.jsx";
 import "../src/styles/layouts/home.css";
 import Photo from "./components/Photo.jsx";
 import ProgressBar from "./components/ProgressBar.jsx";
+import ButtonKeyboard from "./components/ButtonKeyboard.jsx";
+import ButtonVisibleIcon from "./components/ButtonVisibleIcon.jsx";
 
 import logo_main from "./assets/logo-lord-mercury-ment.webp";
 import logo_battery from "./assets/battery-purple.webp";
 import photoRetro from "./assets/foto-retro.webp";
-import ButtonKeyboard from "./components/ButtonKeyboard.jsx";
-import ButtonVisibleIcon from "./components/ButtonVisibleIcon.jsx";
+import photoReal from "./assets/foto-real.webp";
 import iconThunder from "./assets/icon-thunder.webp";
 import iconInvetary from "./assets/icon-inventary.webp";
 import iconMail from "./assets/icon-mail.webp";
@@ -35,6 +37,7 @@ function App() {
 
       <Photo
         imgSrc={photoRetro}
+        imgSrcReal={photoReal}
         cardTitle="LEVEL 1 DESARROLLADOR FULL STACK"
         cardDescription="Ing. Sistemas Computacionales"
       />
@@ -79,6 +82,7 @@ function App() {
           iconAlt="Icono de contacto"
         />
       </section>
+      <Footer />
     </>
   );
 }
