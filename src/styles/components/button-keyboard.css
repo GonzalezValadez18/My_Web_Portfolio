@@ -1,5 +1,6 @@
 .button-keyboard {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
     text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.2);
     text-decoration: none;

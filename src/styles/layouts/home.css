@@ -39,6 +39,11 @@
             display: flex;
             justify-content: center;
 
+            @media screen and (max-width: 768px) {
+                width: 50px;
+            }
+
+
             img {
                 width: 80%;
                 height: auto;
@@ -57,6 +62,10 @@
             display: flex;
             justify-content: center;
 
+            @media screen and (max-width: 768px) {
+                    width: 50px;
+                }
+
             img {
                 width: 80%;
                 height: auto;
@@ -71,6 +80,19 @@
             align-items: center;
             justify-content: center;
 
+            h2{
+                color: #ffffff;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                text-align: center;
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                }
+
+            }
+
             .pulse-label {
                 display: flex;
                 flex-direction: row;
@@ -79,6 +101,12 @@
                 gap: 5px;
                 color: var(--ment);
                 font-weight: 500;
+
+                p{
+                    @media (max-width: 768px) {
+                            font-size: 12px;
+                        }
+                };
 
                 i {
                     display: flex;
@@ -107,7 +135,8 @@
     gap: 50px;
     align-items: center;
     justify-content: center;
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     border-radius: 15px;
     padding: 50px 0;
@@ -116,7 +145,8 @@
 }
 
 .button-section {
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     margin-bottom: 50px;
     display: flex;
@@ -125,7 +155,7 @@
     gap: 30px;
 
     .pulse-text {
-        width: 1200px;
+        width: 100%;
         color: #ffffff;
         font-size: 40px;
         font-weight: 500;
@@ -133,6 +163,10 @@
         margin-top: 50px;
         margin-bottom: 50px;
         text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
     }
 
     /* Animación del guion bajo */

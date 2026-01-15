@@ -1,7 +1,22 @@
+import { useState, useEffect } from "react";
+
 function Photo({ imgSrc, imgSrcReal, cardTitle, cardDescription }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (window.innerWidth <= 768) {
+        setIsFlipped((prev) => !prev);
+      } else {
+        setIsFlipped(false);
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="card-component">
-      <div className="photo-container">
+      <div className={`photo-container ${isFlipped ? "flipped" : ""}`}>
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <img
