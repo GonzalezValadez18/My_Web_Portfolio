@@ -18,7 +18,6 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-color: black;
-    margin-top: 100px;
 }
 
 img,
@@ -49,4 +48,23 @@ a {
 ul,
 ol {
     list-style: none;
+}
+
+.header-space {
+    height: 100px;
+}
+
+.tittle-page {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ment);
+    letter-spacing: 6px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+        margin-top: 20px;
+    }
 }

@@ -1,8 +1,10 @@
-function ButtonKeyboard({buttonText}) {
+import { Link } from "react-router-dom";
+
+function ButtonKeyboard({ buttonText, to }) {
   return (
-    <a href="javascript:void(0)" class="button-keyboard">
+    <Link to={to} className="button-keyboard">
       {buttonText}
-    </a>
+    </Link>
   );
 }
 

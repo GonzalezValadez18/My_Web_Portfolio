@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Footer from "./components/Footer.jsx";
 import "../src/styles/layouts/home.css";
 import Photo from "./components/Photo.jsx";
@@ -14,9 +13,11 @@ import iconThunder from "./assets/icon-thunder.webp";
 import iconInvetary from "./assets/icon-inventary.webp";
 import iconMail from "./assets/icon-mail.webp";
 
-function App() {
+function Home() {
   return (
     <>
+      <div class="header-space"></div>
+
       <header className="Home-header">
         <nav>
           <div className="main-logo-container">
@@ -63,31 +64,32 @@ function App() {
 
       <section className="button-section">
         <p className="pulse-text">
-          &gt; Press Start<span class="underscore">_</span>
+          &gt; Press Start<span className="underscore">_</span>
         </p>
-        <ButtonKeyboard buttonText="CONTINUAR LA AVENTURA" />
+        <ButtonKeyboard buttonText="CONTINUAR LA AVENTURA" to="/adventure" />
         <ButtonVisibleIcon
           iconButton={iconThunder}
           buttonText="ARBOL DE HABILIDADES"
           iconAlt="Icono de arbol de habilidades"
-          href=""
+          href="/skills"
         />
         <ButtonVisibleIcon
           iconButton={iconInvetary}
           buttonText="PROYECTOS"
           iconAlt="Icono de proyectos"
-          href=""
+          href="/projects"
         />
         <ButtonVisibleIcon
           iconButton={iconMail}
           buttonText="CONTACTAME"
           iconAlt="Icono de contacto"
-          href=""
+          href="/contact"
         />
       </section>
+
       <Footer />
     </>
   );
 }
 
-export default App;
+export default Home;
