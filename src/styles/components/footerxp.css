@@ -31,6 +31,7 @@
             font-size: 18px;
             font-weight: bold;
             color: var(--ment);
+            text-shadow: 0 0 8px var(--ment);
         }
     }
 }
