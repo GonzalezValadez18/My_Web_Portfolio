@@ -4,7 +4,6 @@ import "../styles/layouts/skills.css";
 import SkillBar from "../components/SkillBar.jsx";
 import FooterXP from "../components/FooterXP.jsx";
 
-
 function SkillsLayout() {
   const [activeSkill, setActiveSkill] = useState(null);
 
@@ -14,7 +13,7 @@ function SkillsLayout() {
 
   return (
     <>
-      <div class="header-space"></div>
+      <div className="header-space"></div>
 
       <Header />
       <div className="skills-layout">

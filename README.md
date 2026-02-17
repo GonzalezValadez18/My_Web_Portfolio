@@ -1,16 +1,49 @@
-# React + Vite
+# My Web Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio web gamificado. Este proyecto es una representación interactiva de mi experiencia y habilidades como Desarrollador Full Stack, construido con **React** y **Vite**.
 
-Currently, two official plugins are available:
+## 👤 Sobre Mí
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Player:** Jose Leonardo Gonzalez Valadez  
+**Clase:** Desarrollador Full Stack  
+**Nivel:** Calculado dinámicamente basado en mi experiencia (Edad).  
+**Educación:** Ing. Sistemas Computacionales
 
-## React Compiler
+## 🛠️ Tech Stack (Habilidades)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El proyecto muestra mis competencias técnicas a través de un "Árbol de Habilidades":
 
-## Expanding the ESLint configuration
+*   **Frontend:** React, HTML & CSS
+*   **Backend:** Node.js, PHP
+*   **Base de Datos:** SQL
+*   **Herramientas:** Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎮 Características del Portafolio
+
+*   **Interfaz Gamificada:** Diseño inspirado en videojuegos con barras de experiencia y niveles.
+*   **Sistema de XP en Tiempo Real:** La barra de experiencia (`FooterXP`) se llena progresivamente basándose en el ciclo anual hasta mi cumpleaños (18 de Julio).
+*   **Nivel Dinámico:** El "Nivel de Desarrollador" se calcula automáticamente según mi año de nacimiento (1999).
+*   **Visualización de Skills:** Barras de progreso interactivas para cada tecnología.
+
+## 💻 Instalación y Ejecución
+
+Este proyecto utiliza Vite. Para ejecutarlo localmente:
+
+1.  Clona el repositorio:
+    ```bash
+    git clone <tu-repo-url>
+    cd My_Web_Portfolio
+    ```
+
+2.  Instala las dependencias:
+    ```bash
+    npm install
+    ```
+
+3.  Inicia el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
+
+---
+*Desarrollado con ❤️ y código.*

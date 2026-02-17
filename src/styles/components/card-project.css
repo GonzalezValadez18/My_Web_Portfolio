@@ -1,0 +1,193 @@
+.card-project {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 2px solid color-mix(in srgb, var(--purple), transparent 50%);
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 40px;
+
+    .card-project-description {
+        display: flex;
+        flex-direction: row;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .img-section {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                align-items: center;
+            }
+
+            .img-wrapper {
+                padding: 5px;
+                border: 2px solid color-mix(in srgb, var(--ment), transparent 50%);
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    max-width: 200px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+
+            .technologies-section {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin-top: 10px;
+                justify-content: center;
+
+                .tech-tag {
+                    background-color: color-mix(in srgb, var(--purple), transparent 50%);
+                    color: var(--ment);
+                    padding: 2px 8px;
+                    border-radius: 4px;
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .text-section {
+            width: 70%;
+            height: 100%;
+            padding: 0 15px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                padding: 0;
+                text-align: center;
+            }
+
+            .card-project-tittle {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: var(--ment);
+                letter-spacing: 3px;
+            }
+
+            .card-project-description {
+                font-size: 1rem;
+                color: #8f8e93;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .card-project-bar {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        width: 100%;
+
+        .card-project-bar-labels {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .label-left {
+                font-size: 1rem;
+                color: #8f8e93;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+
+            .label-right {
+                font-size: 1rem;
+                color: var(--ment);
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+        }
+
+        .progress-container {
+            width: 100%;
+            max-width: 600px;
+            height: 14px;
+            background: #1a1a1a;
+            border: 1px solid #2b2b2b;
+            padding: 2px;
+            box-sizing: border-box;
+            margin-top: 10px;
+
+            .progress-bar {
+                height: 100%;
+                background: linear-gradient(90deg,
+                        var(--ment),
+                        #00ff9d,
+                        var(--ment));
+                transition: width 0.4s ease;
+            }
+        }
+
+
+
+    }
+
+    .card-project-button {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+        .button-card-project {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--purple);
+            color: white;
+            box-shadow: 10px 10px 0px 0px rgba(90, 10, 133, 0.5);
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(.98);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
+    .crooked-sign {
+        position: absolute;
+        top: -10px;
+        right: -40px;
+        width: 100px;
+        background-color: var(--purple);
+        color: white;
+        font-size: 0.9rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(25deg);
+
+        @media screen and (max-width: 768px) {
+            right: -10px;
+            top: -25px;
+            transform: rotate(15deg) scale(0.8);
+        }
+    }
+}

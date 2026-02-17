@@ -4,7 +4,6 @@ import Photo from "./components/Photo.jsx";
 import ProgressBar from "./components/ProgressBar.jsx";
 import ButtonKeyboard from "./components/ButtonKeyboard.jsx";
 import ButtonVisibleIcon from "./components/ButtonVisibleIcon.jsx";
-
 import logo_main from "./assets/logo-lord-mercury-ment.webp";
 import logo_battery from "./assets/battery-purple.webp";
 import photoRetro from "./assets/foto-retro.webp";
@@ -16,7 +15,7 @@ import iconMail from "./assets/icon-mail.webp";
 function Home() {
   return (
     <>
-      <div class="header-space"></div>
+      <div className="header-space"></div>
 
       <header className="Home-header">
         <nav>
