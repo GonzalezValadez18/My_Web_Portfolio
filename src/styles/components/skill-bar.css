@@ -61,7 +61,7 @@
 }
 
 /* --- DESKTOP: Tooltip lateral (Left/Right) --- */
-@media (min-width: 769px) {
+@media (min-width: 1121px) {
     .skill-tooltip {
         position: absolute;
         top: 50%;
@@ -105,7 +105,7 @@
 }
 
 /* --- MOBILE: Tooltip acordeón (Abajo) --- */
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
     .skill-tooltip {
         display: block;
         max-height: 0;

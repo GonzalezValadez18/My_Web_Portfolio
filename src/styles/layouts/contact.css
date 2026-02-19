@@ -1,6 +1,116 @@
-/* Gobales */
-@import url('../reset.css');
-@import url('../variables.css');
+.contact-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+    color: #fff;
+}
 
-/* Componentes */
-@import url('../components/header.css');
+.contact-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-section {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decoración estilo tech/borde superior */
+.contact-form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--ment, #01e9ca), transparent);
+}
+
+.contact-description {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--ment, #01e9ca);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: #111;
+    border: 1px solid #444;
+    padding: 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--ment, #01e9ca);
+    box-shadow: 0 0 10px rgba(1, 233, 202, 0.2);
+    background-color: #1a1a1a;
+}
+
+.btn-submit {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid var(--ment, #01e9ca);
+    color: var(--ment, #01e9ca);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--ment, #01e9ca);
+    color: #000;
+    box-shadow: 0 0 20px var(--ment, #01e9ca);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contact-form-section {
+        padding: 20px;
+    }
+
+    .contact-layout {
+        padding: 10px;
+    }
+}

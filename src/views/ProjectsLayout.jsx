@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import FooterXP from "../components/FooterXP.jsx";
 import CardProject from "../components/CardProject";
 import "../styles/layouts/projects.css";
-import photoRetro from "../assets/foto-retro.webp";
 import photoDyl from "../assets/dyl-web.webp";
+import photoR2 from "../assets/rapi2s-web.webp";
 import photoProgela from "../assets/crm-progela.webp";
 
 function ProjectsLayout() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const projects = [
     {
       imgSrc: photoProgela,
@@ -32,16 +36,16 @@ function ProjectsLayout() {
       technologies: ["React", "Vite", "CSS"],
     },
     {
-      imgSrc: photoRetro,
-      title: "TASK MASTER API",
+      imgSrc: photoR2,
+      title: "Pagina Web Rapi2s.com.mx",
       description:
-        "Backend service for task management using Node.js and MongoDB.",
+        "Diseño y desarrollo de sitio web de Rapi2s.com.mx, utilizando HTML, CSS y JavaScript para crear una experiencia de usuario atractiva y funcional, optimizando el rendimiento de la página para mejor posicionamiento SEO en los motores de búsqueda. Esta muestra información de venta de boletos de Autobus por Jalisaco y Colima.",
       difficulty: "EASY",
       progress: "100%",
       level: "LVL 3",
-      link: "#",
-      technologies: ["Node.js", "Express", "MongoDB"],
-    },
+      link: "https://rapi2s.com.mx/",
+      technologies: ["HTML", "CSS", "JavaScript"],
+    }
   ];
 
   return (

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Footer from "./components/Footer.jsx";
 import "../src/styles/layouts/home.css";
 import Photo from "./components/Photo.jsx";
@@ -10,9 +11,14 @@ import photoRetro from "./assets/foto-retro.webp";
 import photoReal from "./assets/foto-real.webp";
 import iconThunder from "./assets/icon-thunder.webp";
 import iconInvetary from "./assets/icon-inventary.webp";
+import iconExperience from "./assets/icon-experience.webp";
 import iconMail from "./assets/icon-mail.webp";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <div className="header-space"></div>
@@ -38,7 +44,7 @@ function Home() {
       <Photo
         imgSrc={photoRetro}
         imgSrcReal={photoReal}
-        cardTitle="LEVEL 1 DESARROLLADOR FULL STACK"
+        cardTitle="LEVEL 26 DESARROLLADOR FULL STACK"
         cardDescription="Ing. Sistemas Computacionales"
       />
 
@@ -77,6 +83,12 @@ function Home() {
           buttonText="PROYECTOS"
           iconAlt="Icono de proyectos"
           href="/projects"
+        />
+        <ButtonVisibleIcon
+          iconButton={iconExperience}
+          buttonText="EXPERIENCIA"
+          iconAlt="Icono de experiencia"
+          href="/experience"
         />
         <ButtonVisibleIcon
           iconButton={iconMail}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import "../styles/layouts/skills.css";
 import SkillBar from "../components/SkillBar.jsx";
@@ -6,6 +6,10 @@ import FooterXP from "../components/FooterXP.jsx";
 
 function SkillsLayout() {
   const [activeSkill, setActiveSkill] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   const handleSkillClick = (index) => {
     setActiveSkill(activeSkill === index ? null : index);
