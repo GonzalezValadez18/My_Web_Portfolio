@@ -1,0 +1,47 @@
+@import url('/src/styles/components/buttons.css');
+
+
+.hero-main__small-text {
+    display: flex;
+    width: 100%;
+    color: #777;
+    letter-spacing: 0.2em;
+
+    @media screen and (max-width: 320px) {
+        font-size: .7rem;
+    }
+}
+
+.hero-main__main-text {
+    width: 100%;
+    color: #2f3334;
+    font-size: 6.5rem;
+    line-height: 100px;
+    letter-spacing: -2px;
+    font-family: 'Noto Serif';
+    padding: 30px 0;
+
+
+    @media screen and (max-width: 768px) {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 20px 0;
+    }
+
+
+}
+
+.hero-main__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    @media screen and (max-width: 435px) {
+        flex-direction: column;
+    }
+}

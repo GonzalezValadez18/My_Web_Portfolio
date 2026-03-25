@@ -1,0 +1,12 @@
+/* Gobales */
+@import url('/src/styles/reset.css');
+@import url('/src/styles/variables.css');
+
+/* Componentes */
+@import url('/src/styles/components/footer.css');
+@import url('/src/styles/components/header.css');
+/* Propios */
+@import url('/src/styles/layouts/hero.css');
+@import url('/src/styles/layouts/about.css');
+@import url('/src/styles/layouts/experience.css');
+

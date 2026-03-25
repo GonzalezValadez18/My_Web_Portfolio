@@ -1,102 +1,69 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Footer from "./components/Footer.jsx";
-import "../src/styles/layouts/home.css";
-import Photo from "./components/Photo.jsx";
-import ProgressBar from "./components/ProgressBar.jsx";
-import ButtonKeyboard from "./components/ButtonKeyboard.jsx";
-import ButtonVisibleIcon from "./components/ButtonVisibleIcon.jsx";
-import logo_main from "./assets/logo-lord-mercury-ment.webp";
-import logo_battery from "./assets/battery-purple.webp";
-import photoRetro from "./assets/foto-retro.webp";
-import photoReal from "./assets/foto-real.webp";
-import iconThunder from "./assets/icon-thunder.webp";
-import iconInvetary from "./assets/icon-inventary.webp";
-import iconExperience from "./assets/icon-experience.webp";
-import iconMail from "./assets/icon-mail.webp";
+import Header from "./components/Header.jsx";
+import Hero from "./views/Hero.jsx";
+import About from "./views/About.jsx";
+import Experience from "./views/Experience.jsx";
+import "/src/styles/home.css";
 
 function Home() {
+  const { hash } = useLocation();
+  const [activeSection, setActiveSection] = useState("home");
+
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const observerOptions = {
+      root: null,
+      rootMargin: "-50% 0px -50% 0px",
+      threshold: 0,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions,
+    );
+    const sections = document.querySelectorAll("section[id]");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [hash]);
 
   return (
     <>
       <div className="header-space"></div>
-
-      <header className="Home-header">
-        <nav>
-          <div className="main-logo-container">
-            <img src={logo_main} alt="Logo Portfolio" />
-          </div>
-          <div className="pulse-wrapper">
-            <h2>PLAYER: JOSE LEONARDO GONZALEZ VALADEZ</h2>
-            <span className="pulse-label">
-              <i className="pulse"></i>
-              <p> SYSTEM ONLINE</p>
-            </span>
-          </div>
-          <div className="battery-logo-container">
-            <img src={logo_battery} alt="Battery Logo" />
-          </div>
-        </nav>
-      </header>
-
-      <Photo
-        imgSrc={photoRetro}
-        imgSrcReal={photoReal}
-        cardTitle="LEVEL 26 DESARROLLADOR FULL STACK"
-        cardDescription="Ing. Sistemas Computacionales"
-      />
-
-      <section className="xp-section">
-        <ProgressBar
-          energyLabel="FRONT-END XP"
-          energyPercent="80"
-          energyColor="var(--ment)"
-        />
-
-        <ProgressBar
-          energyLabel="BACK-END XP"
-          energyPercent="90"
-          energyColor="var(--purple)"
-        />
-        <ProgressBar
-          energyLabel="BASE DE DATOS XP"
-          energyPercent="95"
-          energyColor="var(--ment)"
-        />
+      <Header activeSection={activeSection} />
+      <section className="section-placeholder__blue">
+        <Hero />
       </section>
-
-      <section className="button-section">
-        <p className="pulse-text">
-          &gt; Press Start<span className="underscore">_</span>
-        </p>
-        <ButtonKeyboard buttonText="CONTINUAR LA AVENTURA" to="/adventure" />
-        <ButtonVisibleIcon
-          iconButton={iconThunder}
-          buttonText="ARBOL DE HABILIDADES"
-          iconAlt="Icono de arbol de habilidades"
-          href="/skills"
-        />
-        <ButtonVisibleIcon
-          iconButton={iconInvetary}
-          buttonText="PROYECTOS"
-          iconAlt="Icono de proyectos"
-          href="/projects"
-        />
-        <ButtonVisibleIcon
-          iconButton={iconExperience}
-          buttonText="EXPERIENCIA"
-          iconAlt="Icono de experiencia"
-          href="/experience"
-        />
-        <ButtonVisibleIcon
-          iconButton={iconMail}
-          buttonText="CONTACTAME"
-          iconAlt="Icono de contacto"
-          href="/contact"
-        />
+      <section id="about" className="section-placeholder__white">
+        <About />
       </section>
+      <section id="experience" className="section-placeholder__blue">
+        <Experience />
+      </section>
+      <section id="skills" className="section-placeholder"></section>
+      <section id="projects" className="section-placeholder"></section>
+      <section id="contact" className="section-placeholder"></section>
 
       <Footer />
     </>

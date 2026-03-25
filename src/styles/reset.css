@@ -12,12 +12,12 @@ html {
 
 body {
     min-height: 100vh;
-    font-family: Space Grotesk, system-ui, -apple-system, BlinkMacSystemFont,
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-        'Open Sans', 'Helvetica Neue', sans-serif;
+        'Open Sans', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: black;
+    background-color: white;
 }
 
 img,
@@ -51,7 +51,7 @@ ol {
 }
 
 .header-space {
-    height: 100px;
+    height: 80px;
 }
 
 .tittle-page {
@@ -66,5 +66,35 @@ ol {
     @media (max-width: 768px) {
         font-size: 20px;
         margin-top: 20px;
+    }
+}
+
+.section-placeholder__blue{
+    background-color: #f3f5f7;
+    padding: 80px;
+    width: 100%;
+
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 30px;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding: 30px 20px;
+    }
+}
+
+.section-placeholder__white {
+    background-color: #fff;
+    padding: 80px;
+    width: 100%;
+
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 30px;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding: 30px 20px;
     }
 }

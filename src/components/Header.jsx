@@ -1,12 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import iconHome from "../assets/logo-lord-mercury-ment.webp"; // Usando tu logo como Home por ahora
-import iconSkills from "../assets/icon-thunder.webp";
-import iconProjects from "../assets/icon-inventary.webp";
-import iconContact from "../assets/icon-mail.webp";
-import iconExperience from "../assets/icon-experience.webp";
+import iconHome from "/src/assets/main-logo.webp";
 
-function Header() {
+function Header({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -29,12 +25,21 @@ function Header() {
         className={`nav ${isOpen ? "is-open" : ""}`}
         onClick={handleNavClick}
       >
-        <NavItem to="/" icon={iconHome} label="HOME" end />
-        <NavItem to="/experience" icon={iconExperience} label="EXPERIENCE" />
-        <NavItem to="/skills" icon={iconSkills} label="SKILLS" />
-        <NavItem to="/projects" icon={iconProjects} label="PROJECTS" />
-        <NavItem to="/contact" icon={iconContact} label="CONTACT" />
+        <NavItem to="/#about" label="ABOUT" activeSection={activeSection} />
+        <NavItem
+          to="/#experience"
+          label="EXPERIENCE"
+          activeSection={activeSection}
+        />
+        <NavItem to="/#skills" label="SKILLS" activeSection={activeSection} />
+        <NavItem
+          to="/#projects"
+          label="PROJECTS"
+          activeSection={activeSection}
+        />
+        <NavItem to="/#contact" label="CONTACT" activeSection={activeSection} />
       </nav>
+      <button className="header-button">Resume</button>
       <button
         className={`hamburger-menu ${isOpen ? "is-open" : ""}`}
         onClick={toggleMenu}
@@ -48,14 +53,17 @@ function Header() {
   );
 }
 
-function NavItem({ icon, label, to, end }) {
+function NavItem({ label, to, activeSection }) {
+  const id = to.split("#")[1];
+  const isActive = activeSection === id;
+
   return (
     <NavLink
       to={to}
-      end={end}
-      className={({ isActive }) => `nav-item ${isActive ? "active" : ""}`}
+      className={({ isActive: _routerActive }) =>
+        `nav-item ${isActive ? "active" : ""}`
+      }
     >
-      <img src={icon} className="nav-icon" alt={label} />
       <span className="nav-text">{label}</span>
     </NavLink>
   );

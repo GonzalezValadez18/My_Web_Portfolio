@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./App.jsx";
-import Skills from "./views/SkillsLayout.jsx";
-import Projects from "./views/ProjectsLayout.jsx";
-import Contact from "./views/ContactLayout.jsx";
-import Experience from "./views/ExperienceLayout.jsx";
+import Skills from "./App.jsx";
+import Projects from "./App.jsx";
+import Contact from "./App.jsx";
+import Experience from "./App.jsx";
+
 
 function AppRoutes() {
   return (

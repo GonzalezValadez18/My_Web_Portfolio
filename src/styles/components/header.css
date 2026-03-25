@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .header-logo {
     display: none;
 }
@@ -12,65 +16,89 @@
     top: 0;
     width: 100%;
     height: 80px;
-    background-color: rgba(5, 6, 11, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.03);
     backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid #1a1a1a;
+    justify-content: space-between;
     z-index: 1000;
     transition: background-color 0.3s;
-}
+    padding: 10px 80px;
 
-.header .nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    @media screen and (max-width: 768px) {
+        padding: 10px 20px;
+    }
 
-.header .nav .nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
-    color: #777;
-    transition: color 0.3s;
-    text-decoration: none;
-}
+    .header-logo {
+        display: block;
+        height: 90%;
 
-.header .nav .nav-item .nav-icon {
-    width: 40px;
-    opacity: 0.6;
-    transition: opacity 0.3s, filter 0.3s;
-}
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
-.header .nav .nav-item .nav-text {
-    font-size: 10px;
-    letter-spacing: 1px;
-    transition: text-shadow 0.3s;
-}
+    .nav {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-.header .nav .nav-item:hover {
-    color: #ccc;
-}
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            color: #777;
+            transition: color 0.3s;
+            text-decoration: none;
+            font-family: "Noto Serif";
 
-.header .nav .nav-item:hover .nav-icon {
-    opacity: 1;
-}
+            .nav-icon {
+                width: 40px;
+                opacity: 0.6;
+                transition: opacity 0.3s, filter 0.3s;
+            }
 
-.header .nav .nav-item.active {
-    color: var(--ment);
-}
+            .nav-text {
+                font-size: 10px;
+                letter-spacing: 1px;
+                transition: text-shadow 0.3s;
+                color: #777;
+                transition: color 0.3s ease-in-out;
+                font-size: 0.8rem;
 
-.header .nav .nav-item.active .nav-icon {
-    opacity: 1;
-    filter: drop-shadow(0 0 6px var(--ment));
-}
+                &:hover {
+                    color: black;
+                }
+            }
 
-.header .nav .nav-item.active .nav-text {
-    text-shadow: 0 0 8px var(--ment);
+            &.active .nav-text {
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .header-button {
+        display: flex;
+        align-items: center;
+        padding: 6px 20px;
+        border-radius: 5px;
+        background-color: #546168;
+        color: white;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #49555b;
+        }
+
+
+    }
 }
 
 /* Diseño Responsivo para Tablets */
@@ -90,7 +118,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 1.5rem;
-        background: rgba(5, 6, 11, 0.98);
+        background: rgba(254, 254, 254, 0.98);
         backdrop-filter: blur(12px);
         border-left: none;
         opacity: 0;
@@ -114,10 +142,7 @@
         border-radius: 8px;
     }
 
-    /* Ocultar el primer item (HOME) ya que el logo está presente */
-    .header .nav .nav-item:first-child {
-        display: none;
-    }
+
 
     .header .nav .nav-item.active {
         background-color: rgba(50, 240, 255, 0.1);
@@ -144,21 +169,11 @@
         right: 24px;
     }
 
-    .header-logo {
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 45px;
-        height: 45px;
-        z-index: 1002;
-    }
 
     .hamburger-menu span {
         width: 1.8rem;
         height: 3px;
-        background: var(--ment, #32f0ff);
+        background: black;
         border-radius: 10px;
         transition: all 0.3s ease-in-out;
         position: relative;
@@ -181,3 +196,8 @@
 
 /* Diseño Responsivo para Móviles */
 @media (max-width: 480px) {}
+
+.section-placeholder,
+section[id] {
+    width: 100%;
+}
