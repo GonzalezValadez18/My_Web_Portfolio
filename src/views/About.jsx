@@ -8,28 +8,30 @@ function About() {
           <img src={photo} alt="Foto de perfil" />
         </section>
         <section className="about__text">
-          <p className="about__text__title">The Narrative of Intent</p>
+          <p className="about__text__title">José Leonardo González Valadez</p>
           <p className="about__text__content">
-            I believe that every digital touchpoint is an opportunity for a
-            curated experience. My practice centers on the intersection of
-            functional minimalism and editorial storytelling. <br />
-            <br /> With over eight years of experience working with global
-            brands, I have developed a philosophy that treats UI as a gallery
-            space—where content is the masterpiece and the interface is the
-            frame that elevates it without noise.
+            Entiendo cada producto digital como un sistema donde la claridad, el
+            rendimiento y la estructura definen la experiencia. Mi enfoque se
+            centra en desarrollar soluciones eficientes, escalables y orientadas
+            a resultados. <br />
+            <br /> Como ingeniero en sistemas con experiencia en desarrollo web
+            y móvil, trabajo en la creación de arquitecturas sólidas,
+            integración de APIs y optimización continua del rendimiento. Busco
+            que cada implementación aporte valor real, combinando funcionalidad
+            con una ejecución técnica precisa.
           </p>
           <section className="about__statistics">
             <div className="about__statistics__item">
-              <p className="about__statistics__item__number">08+</p>
-              <p className="about__statistics__item__text">YEARS EXP.</p>
+              <p className="about__statistics__item__number">26</p>
+              <p className="about__statistics__item__text">EDAD</p>
             </div>
             <div className="about__statistics__item">
-              <p className="about__statistics__item__number">120</p>
-              <p className="about__statistics__item__text">PROJECTS</p>
+              <p className="about__statistics__item__number">2+</p>
+              <p className="about__statistics__item__text">AÑOS EXP.</p>
             </div>
             <div className="about__statistics__item">
-              <p className="about__statistics__item__number">12</p>
-              <p className="about__statistics__item__text">AWARDS</p>
+              <p className="about__statistics__item__number">10</p>
+              <p className="about__statistics__item__text">PROYECTOS</p>
             </div>
           </section>
         </section>

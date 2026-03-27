@@ -4,7 +4,7 @@
 .hero-main__small-text {
     display: flex;
     width: 100%;
-    color: #777;
+    color: var(--secondary);
     letter-spacing: 0.2em;
 
     @media screen and (max-width: 320px) {
@@ -14,7 +14,7 @@
 
 .hero-main__main-text {
     width: 100%;
-    color: #2f3334;
+    color: var(--primary);
     font-size: 6.5rem;
     line-height: 100px;
     letter-spacing: -2px;

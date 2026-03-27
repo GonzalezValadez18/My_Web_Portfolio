@@ -1,12 +1,15 @@
 /* Gobales */
-@import url('/src/styles/reset.css');
-@import url('/src/styles/variables.css');
+@import "./reset.css";
+@import "./variables.css";
+@import "devicon/devicon.min.css";
 
 /* Componentes */
-@import url('/src/styles/components/footer.css');
-@import url('/src/styles/components/header.css');
+@import "./components/footer.css";
+@import "./components/header.css";
 /* Propios */
-@import url('/src/styles/layouts/hero.css');
-@import url('/src/styles/layouts/about.css');
-@import url('/src/styles/layouts/experience.css');
-
+@import "./layouts/hero.css";
+@import "./layouts/about.css";
+@import "./layouts/experience.css";
+@import "./layouts/toolkit.css";
+@import "./layouts/projects.css";
+@import "./layouts/contact.css";

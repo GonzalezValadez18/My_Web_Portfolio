@@ -5,20 +5,20 @@ function Hero() {
   return (
     <>
       <p className="hero-main__small-text">
-        INDEPENDENT MULTIDISCIPLINARY DESIGNER
+        INGENIERO EN SISTEMAS COMPUTACIONALES
       </p>
       <p className="hero-main__main-text">
         <strong>
-          Archiving the<br></br>
+          Convirtiendo necesidades en<br></br>
         </strong>{" "}
-        <em>sublime</em>{" "}
+        <em>soluciones </em>{" "}
         <strong>
-          through<br></br> digital interfaces
+          tecnológicas<br></br> sólidas
         </strong>
       </p>
       <div className="hero-main__buttons">
-        <ButtonDark text="View Selected Works" />
-        <ButtonLight text="Get In Touch" />
+        <ButtonDark text="Ver Proyectos" />
+        <ButtonLight text="Contactame" />
       </div>
     </>
   );

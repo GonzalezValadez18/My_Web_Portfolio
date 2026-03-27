@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import "devicon/devicon.min.css";
+import "lineicons/dist/lineicons.css";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./views/Hero.jsx";
 import About from "./views/About.jsx";
 import Experience from "./views/Experience.jsx";
-import "/src/styles/home.css";
+import Toolkit from "./views/Toolkit.jsx";
+import Projects from "./views/Projects.jsx";
+import Contact from "./views/Contact.jsx";
+import "./styles/home.css";
 
 function Home() {
   const { hash } = useLocation();
@@ -61,9 +66,15 @@ function Home() {
       <section id="experience" className="section-placeholder__blue">
         <Experience />
       </section>
-      <section id="skills" className="section-placeholder"></section>
-      <section id="projects" className="section-placeholder"></section>
-      <section id="contact" className="section-placeholder"></section>
+      <section id="skills" className="section-placeholder__white">
+        <Toolkit />
+      </section>
+      <section id="projects" className="section-placeholder__blue">
+        <Projects />
+      </section>
+      <section id="contact" className="section-placeholder__white">
+        <Contact />
+      </section>
 
       <Footer />
     </>
