@@ -51,8 +51,8 @@ function ToolkitGrid() {
   return (
     <section className="toolkit">
       <div className="toolkit__header">
-        <p className="toolkit__eyebrow">COMPETENCIES</p>
-        <h2 className="toolkit__title">The Technical Toolkit</h2>
+        <p className="toolkit__eyebrow">COMPETENCIAS</p>
+        <h2 className="toolkit__title">Mi caja de herramientas</h2>
       </div>
 
       <div className="toolkit__grid">

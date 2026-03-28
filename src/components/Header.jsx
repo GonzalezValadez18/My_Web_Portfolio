@@ -26,19 +26,19 @@ function Header({ activeSection }) {
         className={`nav ${isOpen ? "is-open" : ""}`}
         onClick={handleNavClick}
       >
-        <NavItem to="/#about" label="ABOUT" activeSection={activeSection} />
+        <NavItem to="/#about" label="YO" activeSection={activeSection} />
         <NavItem
           to="/#experience"
-          label="EXPERIENCE"
+          label="EXPERIENCIA"
           activeSection={activeSection}
         />
         <NavItem to="/#skills" label="SKILLS" activeSection={activeSection} />
         <NavItem
           to="/#projects"
-          label="PROJECTS"
+          label="PROYECTOS"
           activeSection={activeSection}
         />
-        <NavItem to="/#contact" label="CONTACT" activeSection={activeSection} />
+        <NavItem to="/#contact" label="CONTACTO" activeSection={activeSection} />
       </nav>
       <a 
         href={cv} 
