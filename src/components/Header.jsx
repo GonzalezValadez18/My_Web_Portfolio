@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import iconHome from "/src/assets/main-logo.webp";
+import cv from "/src/assets/CV_Jose_Leonardo_Gonzalez_Valadez_2026_Feb.pdf";
 
 function Header({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +41,7 @@ function Header({ activeSection }) {
         <NavItem to="/#contact" label="CONTACT" activeSection={activeSection} />
       </nav>
       <a 
-        href="/src/assets/CV_Jose_Leonardo_Gonzalez_Valadez_2026_Feb.pdf" 
+        href={cv} 
         download="CV_Jose_Leonardo_Gonzalez_Valadez.pdf" 
         className="header-button"
       >
