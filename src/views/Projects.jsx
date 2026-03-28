@@ -1,4 +1,9 @@
 import { useEffect, useRef } from "react";
+import proyectoCostaLine from "/src/assets/proyecto-costa-line.webp";
+import proyectoRapi2s from "/src/assets/proyecto-rapi2s.webp";
+import proyectoDyl from "/src/assets/proyecto-dyl.webp";
+import proyectoJeg from "/src/assets/proyecto-jeg.webp";
+import videoProgela from "/src/assets/proyecto-progela.mp4";
 
 const projects = [
   {
@@ -6,7 +11,7 @@ const projects = [
     category: "WEB DEVELOPMENT · SEO · DIGITAL EXPERIENCE",
     description:
       "Desarrollo y optimización de una plataforma digital para la consulta de destinos y compra de boletos, enfocada en rendimiento, arquitectura frontend y experiencia de usuario.",
-    image: "/src/assets/proyecto-costa-line.webp",
+    image: proyectoCostaLine,
     link: "https://costaline.com.mx/",
     tags: ["JavaScript", "SASS", "Web Components", "SEO"],
   },
@@ -15,7 +20,7 @@ const projects = [
     category: "WEB DEVELOPMENT · FRONTEND · SEO",
     description:
       "Desarrollo de plataforma web orientada a la consulta de rutas, compra de boletos y gestión de servicios, optimizada para rendimiento, estructura semántica y experiencia de usuario.",
-    image: "/src/assets/proyecto-rapi2s.webp",
+    image: proyectoRapi2s,
     link: "https://rapi2s.com.mx/",
     tags: ["JavaScript", "SASS", "SEO"],
   },
@@ -24,7 +29,7 @@ const projects = [
     category: "WEB DEVELOPMENT · FRONTEND · DEPLOYMENT",
     description:
       "Implementación de sitio web con React y Bootstrap, optimizado para dispositivos móviles, con estructura modular, sitemap para SEO y despliegue en Vercel.",
-    image: "/src/assets/proyecto-dyl.webp",
+    image: proyectoDyl,
     link: "https://veterinaria-dyl.vercel.app/",
     tags: ["React", "Bootstrap", "Vercel", "SEO"],
   },
@@ -32,7 +37,7 @@ const projects = [
   "title": "JEG Dev Studios",
   "category": "WEB DEVELOPMENT · FULL-STACK · SEO",
   "description": "Implementación de sitio web para agencia digital, integrando arquitectura frontend, estructura optimizada para SEO y presentación de servicios de desarrollo, software y aplicaciones.",
-  "image": "/src/assets/proyecto-jeg.webp",
+  "image": proyectoJeg,
   "link": "https://www.jegdevstudios.com/",
   "tags": ["React", "Full-Stack", "SEO"]
   },
@@ -42,9 +47,9 @@ const projects = [
     description:
       "Desarrollo de sistema CRM con PHP y Laravel, enfocado en gestión de información, consumo de APIs REST y administración de bases de datos SQL bajo una arquitectura estructurada.",
     image:
-      "/src/assets/proyecto-progela.webp",
+      videoProgela,
     link: "https://github.com/GonzalezValadez18/CrmProgela",
-    video: "/src/assets/proyecto-progela.mp4", 
+    video: videoProgela, 
     tags: ["PHP", "Laravel", "SQL Server", "SQLite", "Java", "Android Studio" ],
   },
 ];
