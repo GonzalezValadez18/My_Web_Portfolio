@@ -39,7 +39,13 @@ function Header({ activeSection }) {
         />
         <NavItem to="/#contact" label="CONTACT" activeSection={activeSection} />
       </nav>
-      <button className="header-button">Resume</button>
+      <a 
+        href="/src/assets/CV_Jose_Leonardo_Gonzalez_Valadez_2026_Feb.pdf" 
+        download="CV_Jose_Leonardo_Gonzalez_Valadez.pdf" 
+        className="header-button"
+      >
+        CV
+      </a>
       <button
         className={`hamburger-menu ${isOpen ? "is-open" : ""}`}
         onClick={toggleMenu}
