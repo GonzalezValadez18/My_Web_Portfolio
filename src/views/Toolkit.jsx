@@ -35,6 +35,16 @@ const cards = [
     tools: ["mysql", "microsoftsqlserver", "postgresql", "sqlite"],
     wide: false, // Segunda fila: Card normal (ocupa 1 columna)
   },
+  {
+    title: "Herramientas",
+    tools: ["vercel", "github", "postman", "wordpress", "hubspot" ],
+    wide: false, // Segunda fila: Card normal (ocupa 1 columna)
+  },
+  {
+    title: "Diseño y Modelado",
+    tools: ["figma", "sketch"],
+    wide: false, // Segunda fila: Card normal (ocupa 1 columna)
+  },
 ];
 
 function ToolkitGrid() {

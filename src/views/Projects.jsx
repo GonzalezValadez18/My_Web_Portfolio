@@ -1,35 +1,36 @@
 const projects = [
   {
-    title: "The Nordic Collective",
-    category: "COMMERCE · UX ARCHITECTURE",
+    title: "Costa Line",
+    category: "WEB DEVELOPMENT · SEO · DIGITAL EXPERIENCE",
     description:
-      "A spatial commerce experience designed for a high-end furniture brand.",
-    image:
-      "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=1200&auto=format&fit=crop",
-    link: "https://example.com/nordic",
+      "Desarrollo y optimización de una plataforma digital para la consulta de destinos y compra de boletos, enfocada en rendimiento, arquitectura frontend y experiencia de usuario.",
+    image: "/src/assets/proyecto-costa-line.webp",
+    link: "https://costaline.com.mx/",
   },
   {
-    title: "Aura Meditation",
-    category: "HEALTH & WELLNESS · INTERACTION",
-    description: "Redefining digital mindfulness through haptic feedback.",
-    image:
-      "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1200&auto=format&fit=crop",
-    link: "https://example.com/aura",
+    title: "Rapi2s",
+    category: "WEB DEVELOPMENT · FRONTEND · SEO",
+    description:
+      "Desarrollo de plataforma web orientada a la consulta de rutas, compra de boletos y gestión de servicios, optimizada para rendimiento, estructura semántica y experiencia de usuario.",
+    image: "/src/assets/proyecto-rapi2s.webp",
+    link: "https://rapi2s.com.mx/",
   },
   {
-    title: "Synthetix Capital",
-    category: "FINTECH · DATA SYSTEMS",
-    description: "Design language for algorithmic trading platforms.",
-    image:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
-    link: "https://example.com/synthetix",
+    title: "Veterinaria DYL",
+    category: "WEB DEVELOPMENT · FRONTEND · DEPLOYMENT",
+    description:
+      "Implementación de sitio web con React y Bootstrap, optimizado para dispositivos móviles, con estructura modular, sitemap para SEO y despliegue en Vercel.",
+    image: "/src/assets/proyecto-dyl.webp",
+    link: "https://veterinaria-dyl.vercel.app/",
   },
   {
-    title: "Modernist Archival",
-    category: "EDITORIAL · ARCHIVES",
-    description: "Digital publication platform inspired by print.",
-    image: "https://4kwallpapers.com/images/walls/thumbs_3t/11027.jpg",
-    link: "https://example.com/modernist",
+    title: "CRM Progela",
+    category: "BACKEND · LARAVEL · BASES DE DATOS",
+    description:
+      "Desarrollo de sistema CRM con PHP y Laravel, enfocado en gestión de información, consumo de APIs REST y administración de bases de datos SQL bajo una arquitectura estructurada.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    link: "https://github.com/GonzalezValadez18/CrmProgela",
   },
 ];
 
