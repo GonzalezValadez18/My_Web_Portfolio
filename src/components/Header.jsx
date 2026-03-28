@@ -32,7 +32,7 @@ function Header({ activeSection }) {
           label="EXPERIENCIA"
           activeSection={activeSection}
         />
-        <NavItem to="/#skills" label="SKILLS" activeSection={activeSection} />
+        <NavItem to="/#skills" label="HABILIDADES" activeSection={activeSection} />
         <NavItem
           to="/#projects"
           label="PROYECTOS"
