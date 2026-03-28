@@ -79,10 +79,13 @@ function ProjectCard({ project }) {
   }, [project.video]);
 
   return (
-    <article
-      className="work-card"
-      onClick={() => window.open(project.link, "_blank")}
-    >
+    <article className="work-card">
+      <a 
+        href={project.link} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        aria-label={`Ver detalles del proyecto de desarrollo web: ${project.title}`}
+      >
       <div className="work-card__image">
         {project.video ? (
           <video
@@ -94,7 +97,7 @@ function ProjectCard({ project }) {
             poster={project.image}
           />
         ) : (
-          <img src={project.image} alt={project.title} />
+          <img src={project.image} alt={`Captura de pantalla del proyecto ${project.title} - ${project.category}`} loading="lazy" />
         )}
       </div>
 
@@ -116,6 +119,7 @@ function ProjectCard({ project }) {
           ))}
         </div>
       </div>
+      </a>
     </article>
   );
 }

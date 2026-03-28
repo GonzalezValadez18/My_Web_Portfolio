@@ -20,7 +20,7 @@ function Header({ activeSection }) {
   return (
     <header className={`header ${isOpen ? "is-open" : ""}`}>
       <NavLink to="/" className="header-logo">
-        <img src={iconHome} alt="Home" />
+        <img src={iconHome} alt="Jose Leonardo Gonzalez Valadez - Desarrollador Full Stack Logo" />
       </NavLink>
       <nav
         className={`nav ${isOpen ? "is-open" : ""}`}
