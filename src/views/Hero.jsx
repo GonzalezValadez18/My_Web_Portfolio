@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ButtonDark from "../components/ButtonDark.jsx";
 import ButtonLight from "../components/ButtonLight.jsx";
 
@@ -17,8 +18,12 @@ function Hero() {
         </strong>
       </p>
       <div className="hero-main__buttons">
-        <ButtonDark text="Ver Proyectos" />
-        <ButtonLight text="Contactame" />
+        <Link to="/#projects">
+          <ButtonDark text="Ver Proyectos" />
+        </Link>
+        <Link to="/#contact">
+          <ButtonLight text="Contactame" />
+        </Link>
       </div>
     </>
   );

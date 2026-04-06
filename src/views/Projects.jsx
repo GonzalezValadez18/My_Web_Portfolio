@@ -128,7 +128,7 @@ function Projects() {
   return (
     <section className="works">
       <div className="works__header">
-        <h2>Selected Works</h2>
+        <h2>Proyectos Destacados</h2>
         <div className="works__line" />
       </div>
 
