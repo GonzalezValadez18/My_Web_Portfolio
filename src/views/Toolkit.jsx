@@ -22,12 +22,12 @@ const cards = [
   },
   {
     title: "Backend & APIs",
-    tools: ["nodejs", "laravel", "firebase"],
+    tools: ["node", "laravel", "firebase"],
     wide: false, // Segunda fila: Card grande (ocupa 2 columnas)
   },
   {
     title: "Desarrollo Móvil",
-    tools: ["androidstudio", "intellij", "xml"],
+    tools: ["androidstudio", "intellijidea", "xml"],
     wide: false, // Segunda fila: Card normal (ocupa 1 columna)
   },
   {
@@ -42,7 +42,7 @@ const cards = [
   },
   {
     title: "Diseño y Modelado",
-    tools: ["figma", "sketch"],
+    tools: ["figma", "sketchup"],
     wide: false, // Segunda fila: Card normal (ocupa 1 columna)
   },
 ];

@@ -16,15 +16,14 @@
 .toolkit__eyebrow {
     font-size: 12px;
     letter-spacing: 3px;
-    color: var(--secondary);
+    color: rgb(var(--secondary));
     margin-bottom: 8px;
 }
 
 .toolkit__title {
     font-size: 28px;
     font-weight: 500;
-    color: var(--primary);
-
+    color: rgb(var(--primary));
 }
 
 /* GRID PRINCIPAL */
@@ -37,7 +36,7 @@
 
 /* CARD BASE */
 .card {
-    background: #f3f5f7;
+    background: rgb(var(--btn-secondary-hover));
     border-radius: 15px;
     padding: 24px;
     display: flex;
@@ -64,7 +63,7 @@
 .card__title {
     font-size: 20px;
     margin-bottom: 16px;
-    color: var(--primary);
+    color: rgb(var(--primary));
 }
 
 /* PHILOSOPHY LAYOUT */
@@ -73,7 +72,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    color: var(--secondary);
+    color: rgb(var(--secondary));
 }
 
 .philosophy__tags {
@@ -82,7 +81,7 @@
 }
 
 .philosophy__tags span {
-    background: white;
+    background: rgb(var(--white));
     padding: 6px 12px;
     border-radius: 999px;
     font-size: 11px;

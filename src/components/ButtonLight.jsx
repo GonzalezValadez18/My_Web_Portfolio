@@ -1,8 +1,4 @@
 function ButtonLight({ text }) {
-  return (
-    <a className="button-light" href="">
-      {text}
-    </a>
-  );
+  return <button className="button-light">{text}</button>;
 }
 export default ButtonLight;

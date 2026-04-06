@@ -1,8 +1,4 @@
 function ButtonDark({ text }) {
-  return (
-    <a className="button-dark" href="">
-      {text}
-    </a>
-  );
+  return <button className="button-dark">{text}</button>;
 }
 export default ButtonDark;

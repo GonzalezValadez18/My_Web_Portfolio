@@ -11,12 +11,25 @@ html {
     z-index: 1002;
 }
 
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(var(--primary));
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+    z-index: 1001;
+}
+
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     height: 80px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(var(--white), 0.9);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.03);
     backdrop-filter: blur(8px);
     display: flex;
@@ -41,6 +54,10 @@ html {
         }
     }
 
+    .dark-theme & .header-logo img {
+        filter: invert(1) brightness(2);
+    }
+
     .nav {
         width: 60%;
         display: flex;
@@ -53,7 +70,7 @@ html {
             align-items: center;
             gap: 6px;
             cursor: pointer;
-            color: #777;
+            color: rgb(var(--secondary));
             transition: color 0.3s;
             text-decoration: none;
             font-family: "Noto Serif";
@@ -68,17 +85,17 @@ html {
                 font-size: 10px;
                 letter-spacing: 1px;
                 transition: text-shadow 0.3s;
-                color: #777;
+                color: rgb(var(--secondary));
                 transition: color 0.3s ease-in-out;
                 font-size: 0.8rem;
 
                 &:hover {
-                    color: black;
+                    color: rgb(var(--black));
                 }
             }
 
             &.active .nav-text {
-                color: black;
+                color: rgb(var(--black));
                 font-weight: bold;
             }
         }
@@ -90,12 +107,14 @@ html {
         padding: 6px 20px;
         text-decoration: none;
         border-radius: 5px;
-        background-color: #546168;
-        color: white;
+        background-color: rgb(var(--secondary));
+        color: rgb(var(--white));
         transition: all 0.3s ease-in-out;
+        border: 1.5px solid rgb(var(--secondary));
 
         &:hover {
-            background-color: #49555b;
+            background-color: rgb(var(--btn-secondary-hover));
+            color: rgb(var(--secondary));
         }
 
 
@@ -103,7 +122,11 @@ html {
 }
 
 /* Diseño Responsivo para Tablets */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    body.no-scroll {
+        overflow-y: hidden;
+    }
+
     .header.is-open {
         background-color: transparent;
         backdrop-filter: none;
@@ -133,13 +156,13 @@ html {
         flex-direction: column;
         justify-content: center;
         gap: 1.5rem;
-        background: rgba(254, 254, 254, 0.98);
         backdrop-filter: blur(12px);
         border-left: none;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-20px);
         transition: opacity 0.35s ease, visibility 0.35s ease, transform 0.35s ease;
+        background-color: rgba(var(--white), 0.9);
     }
 
     .header .nav.is-open {
@@ -158,7 +181,8 @@ html {
 
 
     .header .nav .nav-item.active {
-        background-color: rgba(50, 240, 255, 0.1);
+        background-color: rgba(var(--primary), 0.1);
+        ;
     }
 
     .header .nav .nav-item .nav-text {
@@ -184,7 +208,7 @@ html {
     .hamburger-menu span {
         width: 1.8rem;
         height: 3px;
-        background: black;
+        background: rgb(var(--black));
         border-radius: 10px;
         transition: all 0.3s ease-in-out;
         position: relative;

@@ -28,7 +28,7 @@ function Footer() {
       <div className="separador"></div>
 
       <p className="footer__texto">
-        Copyright © 2026 Jose Leonardo Gonzalez Valadez
+        © 2026 Jose Leonardo Gonzalez Valadez
       </p>
     </footer>
   );

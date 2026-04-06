@@ -3,22 +3,38 @@
     line-height: 1.5;
     font-weight: 400;
 
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    --ment: #01e9ca;
-    --purple: #670fbe;
 
-    --primary: #2f3334;
-    --secondary: #546168;
-    --btn-primary-hover: #49555b;
-    --btn-secondary-hover: #eeefef;
+    --primary: 47, 51, 52;
+    /* #2f3334 */
+    --secondary: 84, 97, 104;
+    /* #546168 */
+    --btn-primary-hover: 73, 85, 91;
+    /* #49555b */
+    --btn-secondary-hover: 238, 239, 239;
+    /* #eeefef */
 
-    
+    --white: 255, 255, 255;
+    /* #ffffff */
+    --black: 0, 0, 0;
+    /* #000000 */
+    --light-blue: 243, 245, 247;
+    /* #f3f5f7 */
+}
 
+body.dark-theme {
+    --white: 47, 51, 52;
+    /* El primary original se vuelve el fondo */
+    --primary: 255, 255, 255;
+    /* El texto principal ahora es blanco */
+    --secondary: 238, 239, 239;
+    /* El texto secundario es gris claro */
+    --btn-primary-hover: 84, 97, 104;
+    --btn-secondary-hover: 73, 85, 91;
+    --black: 255, 255, 255;
+    --light-blue: 35, 38, 39;
+    /* El fondo de secciones claras se oscurece */
 }

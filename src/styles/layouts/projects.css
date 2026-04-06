@@ -17,13 +17,13 @@
     font-size: 26px;
     font-weight: 500;
     margin: 0;
-    color: var(--primary);
+    color: rgb(var(--primary));
 }
 
 .works__line {
     width: 120px;
     height: 1px;
-    background: var(--btn-secondary-hover);
+    background: rgb(var(--btn-secondary-hover));
 }
 
 /* ===== GRID ===== */
@@ -47,7 +47,7 @@
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 16px;
-    background: black;
+    background: rgb(var(--black));
 }
 
 .work-card__image img,
@@ -74,7 +74,7 @@
 .work-card__category {
     font-size: 11px;
     letter-spacing: 1.5px;
-    color: var(--secondary);
+    color: rgb(var(--secondary));
     margin-bottom: 6px;
 }
 
@@ -90,7 +90,7 @@
     font-size: 18px;
     margin: 0;
     font-weight: 500;
-    color: var(--primary);
+    color: rgb(var(--primary));
 }
 
 /* ===== FLECHA ===== */
@@ -99,19 +99,19 @@
     font-weight: 600;
     opacity: 0.6;
     transition: all 0.25s ease;
-    color: var(--secondary);
+    color: rgb(var(--secondary));
 }
 
 /* Animación hover flecha */
 .work-card:hover .arrow {
     transform: translate(6px, -6px);
-    color: var(--primary);
+    color: rgb(var(--primary));
 }
 
 /* ===== DESCRIPTION ===== */
 .work-card__desc {
     font-size: 13px;
-    color: var(--secondary);
+    color: rgb(var(--secondary));
     line-height: 1.5;
     margin-top: 8px;
     max-width: 90%;
@@ -132,16 +132,16 @@
     letter-spacing: 0.8px;
     padding: 4px 10px;
     border-radius: 4px;
-    background: rgba(0, 0, 0, 0.04);
-    color: var(--secondary);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(var(--primary), 0.04);
+    color: rgb(var(--secondary));
+    border: 1px solid rgba(var(--black), 0.08);
     transition: all 0.3s ease;
 }
 
 .work-card:hover .work-card__tag {
-    color: var(--primary);
-    border-color: var(--btn-secondary-hover);
-    background: rgba(0, 0, 0, 0.02);
+    color: rgb(var(--primary));
+    border: 1px solid rgb(var(--primary));
+    background: rgba(var(--black), 0.02);
 }
 
 /* ===== TOAST NOTIFICATION ===== */
@@ -150,8 +150,8 @@
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background: #1a1a1a;
-    color: #fff;
+    background: rgb(var(--black));
+    color: rgb(var(--white));
     padding: 14px 28px;
     border-radius: 50px;
     font-size: 14px;
@@ -159,9 +159,9 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(var(--primary), 0.2);
     z-index: 9999;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(var(--primary), 0.1);
     animation: slideUpFade 0.5s ease forwards;
 }
 

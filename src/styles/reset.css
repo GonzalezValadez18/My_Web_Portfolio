@@ -17,7 +17,8 @@ body {
         'Open Sans', sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: white;
+    background-color: rgb(var(--white));
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img,
@@ -59,7 +60,6 @@ ol {
     margin-bottom: 50px;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--ment);
     letter-spacing: 6px;
     text-align: center;
 
@@ -69,8 +69,8 @@ ol {
     }
 }
 
-.section-placeholder__blue{
-    background-color: #f3f5f7;
+.section-placeholder__blue {
+    background-color: rgb(var(--light-blue));
     padding: 80px;
     width: 100%;
 
@@ -85,7 +85,7 @@ ol {
 }
 
 .section-placeholder__white {
-    background-color: #fff;
+    background-color: rgb(var(--white));
     padding: 80px;
     width: 100%;
 
