@@ -102,7 +102,7 @@
 
 /* BUTTON */
 .submit {
-    width: 30%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,10 +113,13 @@
     color: rgb(var(--white));
     transition: all 0.3s ease-in-out;
     border: 1.5px solid rgb(var(--secondary));
-    
-        &:hover {
-            background-color: rgb(var(--btn-secondary-hover));
-            color: rgb(var(--secondary));
+
+    &:hover {
+        background-color: rgb(var(--btn-secondary-hover));
+        color: rgb(var(--secondary));
+    }
+        @media screen and (max-width: 800px) {
+            width: 100%;
         }
 }
 
