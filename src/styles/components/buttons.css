@@ -12,6 +12,10 @@
         background-color: rgb(var(--btn-secondary-hover));
         color: rgb(var(--secondary));
     }
+
+    @media screen and (max-width: 435px) {
+        width: 100%;
+    }
 }
 
 .button-light {
@@ -26,5 +30,9 @@
 
     &:hover {
         background-color: rgb(var(--btn-secondary-hover));
+    }
+
+    @media screen and (max-width: 435px) {
+        width: 100%;
     }
 }
