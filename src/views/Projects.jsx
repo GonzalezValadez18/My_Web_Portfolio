@@ -4,6 +4,8 @@ import proyectoRapi2s from "/src/assets/proyecto-rapi2s.webp";
 import proyectoDyl from "/src/assets/proyecto-dyl.webp";
 import proyectoJeg from "/src/assets/proyecto-jeg.webp";
 import videoProgela from "/src/assets/proyecto-progela.mp4";
+import proyectoMeteoFlash from "/src/assets/proyecto-meteo-flash.webp";
+
 
 const projects = [
   {
@@ -23,6 +25,15 @@ const projects = [
     image: proyectoRapi2s,
     link: "https://rapi2s.com.mx/",
     tags: ["JavaScript", "SASS", "SEO"],
+  },
+  {
+    title: "Meteo-Flash",
+    category: "WEB DEVELOPMENT · FRONTEND · SEO · API",
+    description:
+      "Desarrollo de la pagina web que te da el clima en tiempo real de la posicion en la que te encuantres y permite buscar el clima de cualquier parte del mundo.",
+    image: proyectoMeteoFlash,
+    link: "https://meteo-flash-one.vercel.app/",
+    tags: ["JavaScript", "Lit-Element",],
   },
   {
     title: "Veterinaria DYL",
