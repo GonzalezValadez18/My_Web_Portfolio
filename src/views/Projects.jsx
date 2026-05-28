@@ -34,23 +34,23 @@ const projects = [
     tags: ["React", "Bootstrap", "Vercel", "SEO"],
   },
   {
-  "title": "JEG Dev Studios",
-  "category": "WEB DEVELOPMENT · FULL-STACK · SEO",
-  "description": "Implementación de sitio web para agencia digital, integrando arquitectura frontend, estructura optimizada para SEO y presentación de servicios de desarrollo, software y aplicaciones.",
-  "image": proyectoJeg,
-  "link": "https://www.jegdevstudios.com/",
-  "tags": ["React", "Full-Stack", "SEO"]
+    title: "JEG Dev Studios",
+    category: "WEB DEVELOPMENT · FULL-STACK · SEO",
+    description:
+      "Implementación de sitio web para agencia digital, integrando arquitectura frontend, estructura optimizada para SEO y presentación de servicios de desarrollo, software y aplicaciones.",
+    image: proyectoJeg,
+    link: "https://www.jegdevstudios.com/",
+    tags: ["React", "Full-Stack", "SEO"],
   },
   {
     title: "CRM Progela",
     category: "BACKEND · LARAVEL · BASES DE DATOS",
     description:
       "Desarrollo de sistema CRM con PHP y Laravel, enfocado en gestión de información, consumo de APIs REST y administración de bases de datos SQL bajo una arquitectura estructurada.",
-    image:
-      videoProgela,
+    image: videoProgela,
     link: "https://github.com/GonzalezValadez18/CrmProgela",
-    video: videoProgela, 
-    tags: ["PHP", "Laravel", "SQL Server", "SQLite", "Java", "Android Studio" ],
+    video: videoProgela,
+    tags: ["PHP", "Laravel", "SQL Server", "SQLite", "Java", "Android Studio"],
   },
 ];
 
@@ -70,7 +70,7 @@ function ProjectCard({ project }) {
           videoRef.current.pause();
         }
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 },
     );
 
     observer.observe(videoRef.current);
@@ -80,45 +80,51 @@ function ProjectCard({ project }) {
 
   return (
     <article className="work-card">
-      <a 
-        href={project.link} 
-        target="_blank" 
-        rel="noopener noreferrer" 
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label={`Ver detalles del proyecto de desarrollo web: ${project.title}`}
       >
-      <div className="work-card__image">
-        {project.video ? (
-          <video
-            ref={videoRef}
-            src={project.video}
-            muted
-            loop
-            playsInline
-            poster={project.image}
-          />
-        ) : (
-          <img src={project.image} alt={`Captura de pantalla del proyecto ${project.title} - ${project.category}`} loading="lazy" />
-        )}
-      </div>
-
-      <div className="work-card__content">
-        <p className="work-card__category">{project.category}</p>
-
-        <div className="work-card__title-row">
-          <h3>{project.title}</h3>
-          <span className="arrow">
-            <i className="lni lni-arrow-angular-top-right"></i>
-          </span>
+        <div className="work-card__image">
+          {project.video ? (
+            <video
+              ref={videoRef}
+              src={project.video}
+              muted
+              loop
+              playsInline
+              poster={project.image}
+            />
+          ) : (
+            <img
+              src={project.image}
+              alt={`Proyecto ${project.title}: Desarrollo web con ${project.tags.join(", ")}`}
+              loading="lazy"
+            />
+          )}
         </div>
 
-        <p className="work-card__desc">{project.description}</p>
+        <div className="work-card__content">
+          <p className="work-card__category">{project.category}</p>
 
-        <div className="work-card__tags">
-          {project.tags?.map((tag, index) => (
-            <span key={index} className="work-card__tag">{tag}</span>
-          ))}
+          <div className="work-card__title-row">
+            <h3>{project.title}</h3>
+            <span className="arrow">
+              <i className="lni lni-arrow-angular-top-right"></i>
+            </span>
+          </div>
+
+          <p className="work-card__desc">{project.description}</p>
+
+          <div className="work-card__tags">
+            {project.tags?.map((tag, index) => (
+              <span key={index} className="work-card__tag">
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
       </a>
     </article>
   );
