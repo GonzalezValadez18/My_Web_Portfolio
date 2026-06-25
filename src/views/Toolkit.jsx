@@ -17,7 +17,7 @@ const cards = [
   },
   {
     title: "Desarrollo Web",
-    tools: ["react", "astro", "tailwindcss", "bootstrap", "wordpress"],
+    tools: ["react", "astro", "tailwindcss", "bootstrap", "wordpress", "lit"],
     wide: false, // Primera fila: Card grande (ocupa 2 columnas)
   },
   {

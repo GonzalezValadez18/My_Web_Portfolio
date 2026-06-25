@@ -5,14 +5,31 @@ import proyectoDyl from "/src/assets/proyecto-dyl.webp";
 import proyectoJeg from "/src/assets/proyecto-jeg.webp";
 import videoProgela from "/src/assets/proyecto-progela.mp4";
 import proyectoMeteoFlash from "/src/assets/proyecto-meteo-flash.webp";
+import proyectoETN from "/src/assets/proyecto-etn.webp";
+import proyectoAutovias from "/src/assets/proyecto-autovias.webp";
 
 
 const projects = [
   {
+    title: "ETN Turistar",
+    category: "WEB DEVELOPMENT · SEO · DIGITAL EXPERIENCE",
+    description: "Desarrollo y optimización de una plataforma digital para la consulta de destinos y compra de boletos, enfocada en rendimiento, arquitectura frontend y experiencia de usuario.",
+    image: proyectoETN,
+    link: "https://etn.com.mx/",
+    tags: ["JavaScript", "SASS", "Web Components", "SEO"],
+  },
+  {
+    title: "Autovías",
+    category: "WEB DEVELOPMENT · FRONTEND · SEO",
+    description: "Desarrollo de plataforma web orientada a la consulta de rutas, compra de boletos y gestión de servicios, optimizada para rendimiento, estructura semántica y experiencia de usuario.",
+    image: proyectoAutovias,
+    link: "https://autovias.com.mx/",
+    tags: ["JavaScript", "SASS", "SEO"],
+  },
+  {
     title: "Costa Line",
     category: "WEB DEVELOPMENT · SEO · DIGITAL EXPERIENCE",
-    description:
-      "Desarrollo y optimización de una plataforma digital para la consulta de destinos y compra de boletos, enfocada en rendimiento, arquitectura frontend y experiencia de usuario.",
+    description: "Desarrollo y optimización de una plataforma digital para la consulta de destinos y compra de boletos, enfocada en rendimiento, arquitectura frontend y experiencia de usuario.",
     image: proyectoCostaLine,
     link: "https://costaline.com.mx/",
     tags: ["JavaScript", "SASS", "Web Components", "SEO"],
@@ -20,8 +37,7 @@ const projects = [
   {
     title: "Rapi2s",
     category: "WEB DEVELOPMENT · FRONTEND · SEO",
-    description:
-      "Desarrollo de plataforma web orientada a la consulta de rutas, compra de boletos y gestión de servicios, optimizada para rendimiento, estructura semántica y experiencia de usuario.",
+    description: "Desarrollo de plataforma web orientada a la consulta de rutas, compra de boletos y gestión de servicios, optimizada para rendimiento, estructura semántica y experiencia de usuario.",
     image: proyectoRapi2s,
     link: "https://rapi2s.com.mx/",
     tags: ["JavaScript", "SASS", "SEO"],
@@ -29,17 +45,15 @@ const projects = [
   {
     title: "Meteo-Flash",
     category: "WEB DEVELOPMENT · FRONTEND · SEO · API",
-    description:
-      "Desarrollo de la pagina web que te da el clima en tiempo real de la posicion en la que te encuantres y permite buscar el clima de cualquier parte del mundo.",
+    description: "Desarrollo de la pagina web que te da el clima en tiempo real de la posicion en la que te encuantres y permite buscar el clima de cualquier parte del mundo.",
     image: proyectoMeteoFlash,
     link: "https://meteo-flash-one.vercel.app/",
-    tags: ["JavaScript", "Lit-Element",],
+    tags: ["JavaScript", "Lit-Element"],
   },
   {
     title: "Veterinaria DYL",
     category: "WEB DEVELOPMENT · FRONTEND · DEPLOYMENT",
-    description:
-      "Implementación de sitio web con React y Bootstrap, optimizado para dispositivos móviles, con estructura modular, sitemap para SEO y despliegue en Vercel.",
+    description: "Implementación de sitio web con React y Bootstrap, optimizado para dispositivos móviles, con estructura modular, sitemap para SEO y despliegue en Vercel.",
     image: proyectoDyl,
     link: "https://veterinaria-dyl.vercel.app/",
     tags: ["React", "Bootstrap", "Vercel", "SEO"],
@@ -47,8 +61,7 @@ const projects = [
   {
     title: "JEG Dev Studios",
     category: "WEB DEVELOPMENT · FULL-STACK · SEO",
-    description:
-      "Implementación de sitio web para agencia digital, integrando arquitectura frontend, estructura optimizada para SEO y presentación de servicios de desarrollo, software y aplicaciones.",
+    description: "Implementación de sitio web para agencia digital, integrando arquitectura frontend, estructura optimizada para SEO y presentación de servicios de desarrollo, software y aplicaciones.",
     image: proyectoJeg,
     link: "https://www.jegdevstudios.com/",
     tags: ["React", "Full-Stack", "SEO"],
@@ -56,8 +69,7 @@ const projects = [
   {
     title: "CRM Progela",
     category: "BACKEND · LARAVEL · BASES DE DATOS",
-    description:
-      "Desarrollo de sistema CRM con PHP y Laravel, enfocado en gestión de información, consumo de APIs REST y administración de bases de datos SQL bajo una arquitectura estructurada.",
+    description: "Desarrollo de sistema CRM con PHP y Laravel, enfocado en gestión de información, consumo de APIs REST y administración de bases de datos SQL bajo una arquitectura estructurada.",
     image: videoProgela,
     link: "https://github.com/GonzalezValadez18/CrmProgela",
     video: videoProgela,
