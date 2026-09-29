@@ -1,48 +1,36 @@
-# Professional Web Portfolio 🚀
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Una plataforma web moderna y de alto rendimiento diseñada para presentar mi trayectoria profesional y capacidades técnicas como **Desarrollador Full Stack**. Este proyecto prioriza la arquitectura limpia, la optimización de rendimiento y una experiencia de usuario fluida.
+## Getting Started
 
-## 👤 Sobre Mí
+First, run the development server:
 
-*   **Nombre:** Jose Leonardo Gonzalez Valadez
-*   **Rol:** Desarrollador Full Stack
-*   **Especialidad:** Arquitectura de aplicaciones web y optimización de interfaces.
-*   **Formación:** Ingeniería en Sistemas Computacionales.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🛠️ Stack Tecnológico
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-El ecosistema del proyecto se basa en tecnologías modernas para garantizar escalabilidad:
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-*   **Core:** React (Hooks, Context API)
-*   **Entorno de Desarrollo:** Vite (Optimización de assets)
-*   **Frontend:** Modern CSS (Flexbox, Grid, Media Queries)
-*   **Backend & DB:** Node.js, PHP, SQL
-*   **Versionamiento:** Git
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🚀 Características Técnicas
+## Learn More
 
-*   **Navegación Dinámica:** Implementación avanzada de `IntersectionObserver` para el seguimiento en tiempo real de la posición del usuario, sincronizando el estado del encabezado con el contenido visible.
-*   **Arquitectura de Contenedores Fluidos:** Uso de alturas dinámicas y espaciados mediante `padding` en lugar de alturas fijas (`100vh`), permitiendo un flujo de contenido natural y adaptable.
-*   **Optimización Mobile-First:** Interfaz totalmente responsiva diseñada para ofrecer una experiencia consistente desde smartphones hasta pantallas de escritorio de gran formato.
-*   **Lógica de Negocio en el Cliente:** Cálculo dinámico de métricas de experiencia y tiempo de desarrollo integrado directamente en los componentes de React.
+To learn more about Next.js, take a look at the following resources:
 
-## 💻 Instalación y Ejecución
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1.  Clona el repositorio:
-    ```bash
-    git clone https://github.com/tu-usuario/My_Web_Portfolio.git
-    cd My_Web_Portfolio
-    ```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-2.  Instala el ecosistema de dependencias:
-    ```bash
-    npm install
-    ```
+## Deploy on Vercel
 
-3.  Despliega el entorno local:
-    ```bash
-    npm run dev
-    ```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-*Enfoque en calidad, arquitectura y rendimiento.*
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
