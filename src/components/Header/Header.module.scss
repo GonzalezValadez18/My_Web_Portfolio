@@ -188,7 +188,7 @@
     }
 }
 
-// Animación juguetona de shake para el icono de tema
+// Animación de shake
 @keyframes playfulShake {
     0% {
         transform: rotate(0deg) scale(1);
@@ -213,7 +213,7 @@
     }
 }
 
-// Estilos para Modo Oscuro (Azul Marino)
+// Estilos para Modo Oscuro
 :root[data-theme="dark"] {
     .header {
         background-color: #000000;
